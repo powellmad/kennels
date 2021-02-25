@@ -4,6 +4,8 @@ import { AnimalCard } from "./animals/AnimalCard.js"
 import { CustomerCard } from "./customers/CustomerCard.js"
 import { EmployeeCard } from "./employees/EmployeeCard.js"
 import { LocationCard } from "./locations/LocationCard.js"
+import { PropsAndState } from "./PropsAndState.js"
+
 
 export const Kennel = () => {
     const kennel = {
@@ -17,6 +19,7 @@ export const Kennel = () => {
 
     return ( 
     <>
+        <PropsAndState yourName="Mad" />
         <h2>Nashville Kennels</h2>
         <small>Loving care when you're not there.</small>
         <address>
