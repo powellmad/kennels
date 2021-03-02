@@ -1,8 +1,8 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
-import { AnimalList } from "./animal/AnimalList"
-import { AnimalProvider } from "./animal/AnimalProvider"
+import { AnimalList } from "./animals/AnimalList"
+import { AnimalProvider } from "./animals/AnimalProvider"
 
 export const ApplicationViews = () => {
     return (
