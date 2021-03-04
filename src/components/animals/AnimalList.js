@@ -15,9 +15,7 @@ export const AnimalList = () => {
 
   useEffect(() => {
     console.log("AnimalList: useEffect - getAnimals")
-    getLocations()
-        .then(getCustomers)
-        .then(getAnimals)
+    getAnimals()
     }, [])
 
   return (
@@ -31,9 +29,7 @@ export const AnimalList = () => {
     <div className="animals">
           {
           animals.map(animal => {
-              const customer = customers.find(c => c.id === animal.customerId)
-              const location = locations.find(l => l.id === animal.locationId)
-              return <AnimalCard key={animal.id} animal={animal} customer={customer} location={location} />
+              return <AnimalCard key={animal.id} animal={animal} location={animal.location} customer={animal.customer}/>
         })
       }
     </div>
