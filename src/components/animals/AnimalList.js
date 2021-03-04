@@ -15,28 +15,24 @@ export const AnimalList = () => {
 
   useEffect(() => {
     console.log("AnimalList: useEffect - getAnimals")
-    getLocations()
-        .then(getCustomers)
-        .then(getAnimals)
+    getAnimals()
     }, [])
 
   return (
+    <>
+    {console.log("AnimalList: Render", animals)}
+    <h2>Animals</h2>
+    <button onClick={() => {history.push("/animals/create")}}>
+    Add Animal
+    </button>
+    
     <div className="animals">
-      {console.log("AnimalList: Render", animals)}
-      <h2>Animals</h2>
-		      <button onClick={() => {history.push("/animals/create")}}>
-            Add Animal
-          </button>
           {
           animals.map(animal => {
-              const owner = customers.find(c => c.id === animal.customerId)
-              const clinic = locations.find(l => l.id === animal.locationId)
-              return <AnimalCard key={animal.id}
-                          location={clinic}
-                          customer={owner}
-                          animal={animal} />
+              return <AnimalCard key={animal.id} animal={animal} location={animal.location} customer={animal.customer}/>
         })
       }
     </div>
+    </>
   )
 }
