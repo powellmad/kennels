@@ -32,3 +32,11 @@ button {
   select {
     padding: 3px;
   }
+
+.animal__name {
+    text-decoration: none;
+    font-size: 14pt;
+
+}.animal__name {
+    color: #151316;
+}
