@@ -5,25 +5,25 @@ import { CustomerCard } from "./CustomerCard"
 import "./Customer.css"
 
 export const CustomerList = () => {
-    const { customers, getCustomers } = useContext(CustomerContext)
-    // const history = useHistory() 
+  const { customers, getCustomers } = useContext(CustomerContext)
+  // const history = useHistory() 
   useEffect(() => {
     console.log("CustomerList: useEffect - getCustomers")
     getCustomers()
-    }, [])
+  }, [])
 
   return (
-    <>
-    <h2>Customers</h2>
-    <div className="customers">
-      {console.log("CustomerList: Render", customers)}
-      {
-        customers.map(customer => {
-            
+    <div className="customerComponent">
+      <h2>Customers</h2>
+      <div className="customers">
+        {console.log("CustomerList: Render", customers)}
+        {
+          customers.map(customer => {
+
             return <CustomerCard key={customer.id} customer={customer} />
-        })
-      }
+          })
+        }
+      </div>
     </div>
-    </>
   )
 }

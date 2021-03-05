@@ -8,7 +8,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #2A262C;
   font-family: "Comfortaa", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -25,13 +25,13 @@ h6 {
 }
 
 body {
-  padding: 30px;
+  background-color: #FAEEDC;
 }
 
 p {
   margin-bottom: 1.5em;
-  color: #d6fcff;
-  color: darkslateblue;
+  color: #F0CF9C;
+  color: #1A181B;
 }
 
 strong {
@@ -40,4 +40,8 @@ strong {
 
 address {
   margin: 0 0 1.5em;
+}
+
+.home {
+  margin: 20px;
 }
