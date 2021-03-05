@@ -2,9 +2,32 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
+    background-color: #E09F3E;
+    margin: 0;
+    padding: 25px;
+    
 }
 
 .navbar__item {
     flex-basis: 20%;
     list-style-type: none;
+    
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-size: 11pt;
+    padding: 10px;
+}
+
+.navbar__link:link {
+    color: #2A262C;
+}
+
+.navbar__link:visited {
+    color: #2A262C;
+}
+
+.navbar__link:hover {
+    background-color: #E8B76D;
 }
