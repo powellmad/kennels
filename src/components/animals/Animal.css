@@ -21,6 +21,10 @@ button {
       background-color: white;
   }
 
+  /* .animal:hover {
+    padding: 20px;
+  } */
+
   fieldset {
     border: none;
   }
@@ -37,6 +41,13 @@ button {
     text-decoration: none;
     font-size: 14pt;
 
-}.animal__name {
+}
+
+.animal__name {
     color: #151316;
+}
+
+.animal__name:hover {
+    color: #5E5463;
+    font-size: 15pt;
 }
