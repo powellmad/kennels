@@ -30,11 +30,12 @@ button {
   }
 
   fieldset input, select {
-    margin: 3px;
+    margin: 1px;
+    padding: 1px;
   }
 
   select {
-    padding: 3px;
+    padding: 1px;
   }
 
 .animal__name {
@@ -50,4 +51,9 @@ button {
 .animal__name:hover {
     color: #5E5463;
     font-size: 15pt;
+}
+
+.animal__name__detail {
+    font-size: 16pt;
+    margin: 15px 0;
 }
