@@ -55,4 +55,20 @@ button:hover {
 
 .home {
   margin: 20px;
+  padding: 20px;
+}
+
+.home {
+  background-position-x: right;
+  background-image: url(./auth/logo.png);
+  z-index: 1;
+  min-height: 25rem;
+  min-width: 45rem;
+  background-color: hsla(0,0%,100%,0.40);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+}
+
+bg-img {
+  box-shadow: 0 0 8px 8px white inset;
 }

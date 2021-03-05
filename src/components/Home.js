@@ -3,7 +3,7 @@ import { PropsAndState } from './PropsAndState'
 
 export const Home = () => (
     <div className="home">
-        <h2>Nashville Kennels</h2>
+        <h1>Nashville Kennels</h1>
         <small>Loving care when you're not there.</small>
 
         <address>
