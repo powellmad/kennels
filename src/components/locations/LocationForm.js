@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react"
 import { LocationContext } from "./LocationProvider"
 import "./Location.css"
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom'
 
 export const LocationForm = () => {
-    debugger
+    
     const { addLocation } = useContext(LocationContext)
 
 

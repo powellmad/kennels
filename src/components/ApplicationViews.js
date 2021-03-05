@@ -50,11 +50,11 @@ export const ApplicationViews = () => {
                 <Route exact path="/locations">
                     <LocationList />
                 </Route>
-            </LocationProvider>
 
-            <Route path="/locations/create">
-                <LocationForm />
-            </Route>
+                <Route path="/locations/create">
+                    <LocationForm />
+                </Route>
+            </LocationProvider>
 
             <LocationProvider>
                 <Route exact path="/locations/detail/:locationId(\d+)">
