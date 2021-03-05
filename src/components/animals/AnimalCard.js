@@ -9,7 +9,7 @@ export const AnimalCard = ({ animal, location, customer }) => (
           { animal.name }
         </Link>
         </h3>
-        <div className="animal__breed">Breed: {animal.breed}</div>
+        <div className="animal__breed">{animal.breed}</div>
         {/* <div className="location__name">Location: {location?.name}</div>
         <div className="customer__name">Customer: {customer?.name}</div> */}
     </section>

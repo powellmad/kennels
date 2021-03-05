@@ -42,6 +42,17 @@ address {
   margin: 0 0 1.5em;
 }
 
+button {
+  background-color: #E09F3E;
+  border: 1px solid #D38C22;
+  color: #FAEEDC;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #D38C22;
+}
+
 .home {
   margin: 20px;
 }
