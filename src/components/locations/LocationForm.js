@@ -34,7 +34,6 @@ export const LocationForm = () => {
         .then(() => history.push("/locations"))
       }
     
-
     return (
       <form className="locationForm">
           <h2 className="locationForm__title">New Location</h2>

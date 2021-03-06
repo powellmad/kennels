@@ -1,10 +1,13 @@
 import React, { useContext, useEffect } from "react"
 import { EmployeeContext } from "./EmployeeProvider"
+import { LocationContext } from "../locations/LocationProvider"
 import { EmployeeCard } from "./EmployeeCard"
 import "./Employee.css"
 
 export const EmployeeList = () => {
   const { employees, getEmployees } = useContext(EmployeeContext)
+  const { locations, getLocations } = useContext(LocationContext)
+
 
   useEffect(() => {
     console.log("EmployeeList: useEffect - getEmployees")

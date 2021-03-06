@@ -7,6 +7,8 @@ import { AnimalProvider } from "./animals/AnimalProvider"
 import { AnimalDetail } from "./animals/AnimalDetail"
 import { CustomerList } from "./customers/CustomerList"
 import { CustomerProvider } from "./customers/CustomerProvider"
+import { CustomerDetail } from "./customers/CustomerDetail"
+import { CustomerForm } from "./customers/CustomerForm"
 import { LocationList } from "./locations/LocationList"
 import { LocationProvider } from "./locations/LocationProvider"
 import { LocationDetail } from "./locations/LocationDetail"
@@ -34,8 +36,6 @@ export const ApplicationViews = () => {
                         <Route path="/animals/create">
                             <AnimalForm />
                         </Route>
-
-
                     </CustomerProvider>
                 </LocationProvider>
             </AnimalProvider>
@@ -54,24 +54,32 @@ export const ApplicationViews = () => {
                 <Route path="/locations/create">
                     <LocationForm />
                 </Route>
-            </LocationProvider>
 
-            <LocationProvider>
                 <Route exact path="/locations/detail/:locationId(\d+)">
                     <LocationDetail />
                 </Route>
             </LocationProvider>
 
             <CustomerProvider>
-                <Route path="/customers">
+                <Route exact path="/customers">
                     <CustomerList />
+                </Route>
+
+                <Route path="/customers/create">
+                    <CustomerForm />
+                </Route>
+                
+                <Route exact path="/customers/detail/:customerId(\d+)">
+                    <CustomerDetail />
                 </Route>
             </CustomerProvider>
 
             <EmployeeProvider>
-                <Route path="/employees">
-                    <EmployeeList />
-                </Route>
+                <LocationProvider>
+                    <Route path="/employees">
+                        <EmployeeList />
+                    </Route>
+                </LocationProvider>
             </EmployeeProvider>
         </>
     )

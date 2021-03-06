@@ -22,7 +22,7 @@ export const LocationDetail = () => {
   return (
     <section className="location">
       <h3 className="location__name">{location.name}</h3>
-      <div className="location__animal">Address: {location.address}</div>
+      <div className="location__address">Address: {location.address}</div>
     </section>
   )
 }
