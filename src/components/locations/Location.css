@@ -1,4 +1,4 @@
-.locationComponent {
+.locationComponent, .locationForm {
     padding: 20px;
 }
 
@@ -26,9 +26,30 @@ button {
   }
 
   fieldset input, select {
-    margin: 3px;
+    margin: 2px;
+    padding: 1px;
   }
 
   select {
     padding: 3px;
   }
+
+  .location__name {
+    text-decoration: none;
+    font-size: 14pt;
+
+}
+
+.location__name {
+    color: #151316;
+}
+
+.location__name:hover {
+    color: #5E5463;
+    font-size: 15pt;
+}
+
+.location__name__detail {
+    font-size: 16pt;
+    margin: 15px 0;
+}

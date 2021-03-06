@@ -42,6 +42,29 @@ address {
   margin: 0 0 1.5em;
 }
 
+button {
+  background-color: #E09F3E;
+  border: 1px solid #D38C22;
+  color: #FAEEDC;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #D38C22;
+}
+
 .home {
   margin: 20px;
+  padding: 20px;
+}
+
+.home {
+  background-position-x: right;
+  background-image: url(./auth/logo.png);
+  z-index: 1;
+  min-height: 25rem;
+  min-width: 45rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
 }
