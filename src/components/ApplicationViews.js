@@ -5,6 +5,7 @@ import { AnimalList } from "./animals/AnimalList"
 import { AnimalForm } from "./animals/AnimalForm"
 import { AnimalProvider } from "./animals/AnimalProvider"
 import { AnimalDetail } from "./animals/AnimalDetail"
+import { AnimalSearch } from "./animals/AnimalSearch"
 import { CustomerList } from "./customers/CustomerList"
 import { CustomerProvider } from "./customers/CustomerProvider"
 import { CustomerDetail } from "./customers/CustomerDetail"
@@ -30,10 +31,15 @@ export const ApplicationViews = () => {
                     <CustomerProvider>
                         {/* Note the addition of "exact" now that we have an additional route with "/animals" in it below this Route: "/animals/create" */}
                         <Route exact path="/animals">
+                            <AnimalSearch />
                             <AnimalList />
                         </Route>
 
                         <Route path="/animals/create">
+                            <AnimalForm />
+                        </Route>
+
+                        <Route path="/animals/edit/:animalId(\d+)">
                             <AnimalForm />
                         </Route>
                     </CustomerProvider>
@@ -68,7 +74,7 @@ export const ApplicationViews = () => {
                 <Route path="/customers/create">
                     <CustomerForm />
                 </Route>
-                
+
                 <Route exact path="/customers/detail/:customerId(\d+)">
                     <CustomerDetail />
                 </Route>

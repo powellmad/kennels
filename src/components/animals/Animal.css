@@ -5,6 +5,7 @@
 button {
     background-color: #FCF6ED;
     border: 1px solid #D38C22;
+    margin: 5px 5px 5px 0;
 }
 
 .animals {
@@ -56,4 +57,8 @@ button {
 .animal__name__detail {
     font-size: 16pt;
     margin: 15px 0;
+}
+
+.animalSearch {
+  margin: 10px;
 }
