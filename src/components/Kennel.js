@@ -2,7 +2,7 @@ import React from "react"
 import { Route, Redirect } from "react-router-dom"
 import { NavBar } from "./nav/NavBar"
 import { ApplicationViews } from "./ApplicationViews"
-import { Login } from "./auth/Login";
+import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import "./Kennel.css"
 
@@ -31,4 +31,4 @@ export const Kennel = () => (
         <Register />
       </Route>
     </>
-  );
+)
